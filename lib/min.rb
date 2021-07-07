@@ -9,5 +9,13 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  grocery_array = []
+
+  groceries.each { |type,grocery|
+    grocery.each { |e|
+      grocery_array << e
+    }
+  }
+  min = grocery_array.min
+  min
 end
